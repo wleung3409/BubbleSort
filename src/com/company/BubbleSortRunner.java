@@ -7,16 +7,16 @@ public class BubbleSortRunner {
         System.out.println();
         for (int num:testArr) {
             System.out.print(num + " ");
-            System.out.println();
         }
         long time = System.nanoTime();
         SortUtils.bubbleSort(testArr);
+        System.out.println();
         System.out.print("After: ");
         System.out.println();
         for (int num:testArr) {
             System.out.print(num + " ");
-            System.out.println();
         }
+        System.out.println();
         time = System.nanoTime() - time;
         System.out.println("Time taken: " + time + " nanoseconds");
     }
